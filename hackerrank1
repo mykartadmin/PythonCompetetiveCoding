@@ -1,0 +1,11 @@
+def merge_the_tools(string, k):
+    i = k
+    while i<=len(string):
+        x = string[i-k:i]
+        x = list(x)
+        s = {}
+        for j in x:
+            s[j]=j
+        s = list(s)
+        print("".join(s))
+        i+=k
